@@ -1,0 +1,8 @@
+<app-navbar *ngIf="!isLogin"></app-navbar>
+<!-- <app-detail-laptop (newItemEvent)="toCompare($event)"></app-detail-laptop> -->
+<router-outlet></router-outlet>
+<app-footer *ngIf="!isLogin"></app-footer>
+<app-scroll-top *ngIf="!isLogin"></app-scroll-top>
+<!-- <app-cart-laptops *ngFor="let laptop of laptops" [newlaptop]="laptop"></app-cart-laptops> -->
+<app-cart-laptops *ngIf="!isLogin || isCompare"></app-cart-laptops>
+

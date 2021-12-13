@@ -1,0 +1,21 @@
+
+<div class="btn-group dropup cart-laptops" [ngClass]="{ 'hidden': hidden }">
+  <button type="button" class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <p class="title-comparison mt-2">To compare<span class="badge badge-primary ms-3 p-2">{{listLaptops.length}}</span><span *ngIf="alert" class="p-0" [ngClass]="{ 'alert': alert, 'alert-danger': alert }">  Max 4</span></p>
+
+  </button>
+  <div class="dropdown-menu">
+      <div class="buttons-cart">
+          <button class="btn btn-compare" type="button" name="comparar" (click)="compareLaptops()">Compare!</button>
+          <button class="btn btn-add" type="button" name="add"></button>
+          <table class="list-laptops">
+              <p class="listLaptopsEmpty" *ngIf="listLaptops.length === 0">{{empty}}</p>
+              <tr *ngFor="let laptop of listLaptops" class="file-laptop-car">
+                      <td class="image-laptop-list-compare" [ngStyle]="{ 'background-image': 'url(' + laptop.image + ')' }"></td>
+                      <td class="name-laptop-list-compare">{{ laptop.brand }} {{ laptop.model }}</td>
+                      <td class="del-laptop-list-compare"><a class="delete-icon" (click)="deleteLaptop(laptop)"><img class="icon me-3" src="../../../assets/icons/eliminar.svg"></a></td>
+              </tr>
+          </table>
+      </div>
+  </div>
+</div>

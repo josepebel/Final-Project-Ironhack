@@ -1,0 +1,366 @@
+<div class="container-fluid">
+  <div class="logo">
+    <img src="../../../assets/icons/laptcom_icon_black.png" alt="Logo laptcom" />
+  </div>
+  <div class="box-title">
+    <span class="title">Comparison</span>
+  </div>
+  <div class="close-comparison">
+    <a routerLink="/laptops"><i class="fas fa-times"></i></a>
+  </div>
+</div>
+
+<div class="container">
+
+
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4></h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center"
+    > <a href="{{laptop.url}}"><div class="image-laptop" [ngStyle]="{ 'background-image': 'url('+ laptop.image +')'}"></div></a>
+
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Price</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+      {{ laptop.price }} €
+    </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Brand</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+      {{ laptop.brand }}
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Model</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+      {{ laptop.model }}
+    </div>
+  </div>
+  <!-- <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Fecha de fabricación</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    {{ (laptop.fabricDate) }}
+    </div> -->
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Processor</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+      <p>{{laptop.cpuName}}</p>
+      <p>{{laptop.cpuCores}} Cores</p>
+      <p>{{laptop.cpuSpeed}} GHz</p>
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>RAM</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    <p>{{ laptop.ramType }}</p>
+    <p>{{ laptop.ramSize }} GB</p>
+    <p>Ampliable {{ laptop.ramExpandSize }} GB</p>
+    <p>{{ laptop.ramSpeed }} MHz</p>
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Graphic card</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    <p>{{laptop.graphicsBrand}} </p>
+    <p>{{laptop.graphicsModel}}</p>
+
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>ROM</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    <p>{{ laptop.romType }}</p>
+    <p>{{ laptop.romCapacity }} GB</p>
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Resolution</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    {{laptop.resolution}}
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Operative System</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    {{laptop.os}}
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Battery</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    {{laptop.battery}} mAh
+    </div>
+  </div>
+  <hr class="container-separator my-4" />
+  <div class="row">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+      <h4>Weight</h4>
+    </div>
+    <div
+      *ngFor="let laptop of listaLaptops"
+      class="col-2 col-sm-2 col-md-2 col-lg-2"
+    >
+    {{laptop.weight}} kg.
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="box-compare">
+      <div class="row">
+        <div class="col-4">
+          <h2 class="title-tecnico">Valoraciones</h2>
+        </div>
+        <div *ngFor="let laptop of listaLaptops" class="col-2">
+          <ng-template #t let-fill="fill">
+            <span class="star" [class.full]="fill === 100">
+              <span class="half" [style.width.%]="fill"> &#9733; </span>
+              &#9733;
+            </span>
+          </ng-template>
+
+          <ngb-rating
+            [(rate)]="laptop.valoration"
+            [starTemplate]="t"
+            [readonly]="true"
+            [max]="5"
+          ></ngb-rating>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h2 class="title-tecnico">Ficha técnica</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"><h3 class="title-tecnico">Marca</h3></div>
+        <div *ngFor="let laptop of listaLaptops" class="col-auto">
+          {{ laptop.brand }}
+        </div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Modelo</div>
+        <div *ngFor="let laptop of listaLaptops" class="col-auto">
+          {{ laptop.model }}
+        </div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Fecha de fabricación</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Procesador</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Memoria RAM</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Gráfica</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Almacenamiento</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Pantalla</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Puertos</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Sistema Operativo</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Batería</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Peso</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-3">Precio</div>
+      </div>
+    </div>
+    <div class="box-compare col-2" *ngFor="let laptop of listaLaptops">
+      <div class="row">
+        <div class="col-auto">
+          <ng-template #t let-fill="fill">
+            <span class="star" [class.full]="fill === 100">
+              <span class="half" [style.width.%]="fill"> &#9733; </span>
+              &#9733;
+            </span>
+          </ng-template>
+
+          <ngb-rating
+            [(rate)]="laptop.valoration"
+            [starTemplate]="t"
+            [readonly]="true"
+            [max]="5"
+          ></ngb-rating>
+        </div>
+      </div>
+      <div class="row"></div>
+      <div class="row">
+        <div class="col-auto">{{ laptop.brand }}</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.model }}</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ formatDate(laptop.fabric_date) }}</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">
+          <p>{{ laptop.cpu }}</p>
+          <p>{{ laptop.cpu_core }} Núcleos</p>
+          <p>{{ laptop.cpu_speed }} GHz</p>
+        </div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">
+          <p>{{ laptop.ram_type }}</p>
+          <p>{{ laptop.ram_size }} GB</p>
+          <p>Ampliable {{ laptop.ram_expand }} GB</p>
+          <p>{{ laptop.ram_speed }} MHz</p>
+        </div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.graphics }}</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.rom }}</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.resolution }}</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">
+          <p>Hdmi: {{ laptop.hdmi }}</p>
+          <p>USB: {{ laptop.usb }}</p>
+        </div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.os }}</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.battery }} mAh</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.weight }} kg.</div>
+      </div>
+      <hr class="container-separator" />
+      <div class="row">
+        <div class="col-auto">{{ laptop.price }} €</div>
+      </div>
+    </div>
+  </div>
+</div> -->
+

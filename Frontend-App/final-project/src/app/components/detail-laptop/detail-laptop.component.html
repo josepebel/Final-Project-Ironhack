@@ -1,0 +1,104 @@
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+      <div class="col">
+          <img src="{{laptop.image}}" class="card-img-top" alt="Imagen laptop">
+      </div>
+      <div class="col-md-auto">
+          <h2 class="title-laptop">{{laptop.brand}} {{laptop.model}}</h2>
+          <div class="contain-valoration-price">
+              <div class="box-price-amazon">
+                  <a href="{{laptop.url}}" target="_blank">
+                      <div class="price-amazon p-2">
+                          <span class="price">{{laptop.price}} €</span>
+                          <img class="logo-amazon" src="../../../assets/images/Nuevo-Logo-PcComponentes.jpg" alt="Logo Amazon"/>
+                      </div>
+                  </a>
+              </div>
+              <!-- <div class="valoration">
+                  <h6>Valoración media de nuestros usuarios</h6>
+                  <ng-template #t let-fill="fill">
+                      <span class="star" [class.full]="fill === 100">
+                          <span class="half" [style.width.%]="fill">
+                              &#9733;
+                          </span>
+                          &#9733;
+                      </span>
+                  </ng-template>
+                  <ngb-rating [(rate)]="laptop.valoration" [starTemplate]="t" [readonly]="true" [max]="5"></ngb-rating>
+              </div> -->
+          </div>
+      </div>
+
+      <div class="d-flex justify-content-start">
+        <button (click)="addLaptop(laptop.id)" class="mt-3 btn btn-dark to-compare"><img src="../../../assets/icons/boton-circular-plus.svg"> Add to comparator</button>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="title-tecnico">Specifications</h2>
+  <div class="row">
+    <div class="col-4">Brand</div>
+    <div class="col-6">{{laptop.brand}}</div>
+</div>
+<hr class="container-separator">
+  <div class="row">
+      <div class="col-4">Model</div>
+      <div class="col-6">{{laptop.model}}</div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+      <div class="col-4">Processor</div>
+      <div class="col-6"><p>{{laptop.cpuName}}</p><p>{{laptop.cpuCores}} Cores</p><p>{{laptop.cpuSpeed}} GHz</p></div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+      <div class="col-4">RAM</div>
+      <div class="col-6"><p>{{laptop.ramType}}</p><p>{{laptop.ramSize}} GB</p><p>Ampliable {{laptop.ramExpandSize}} GB</p><p>{{laptop.ramSpeed}} MHz</p></div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+      <div class="col-4">Graphic card</div>
+      <div class="col-6">{{laptop.graphicsBrand}} {{laptop.graphicsModel}}</div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+      <div class="col-4">ROM</div>
+      <div class="col-6">{{laptop.romType}} {{laptop.romCapacity}}</div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+    <div class="col-4">Screen</div>
+    <div class="col-6">{{laptop.resolution}}</div>
+</div>
+  <hr class="container-separator">
+  <div class="row">
+      <div class="col-4">Operative System</div>
+      <div class="col-6">{{laptop.os}}</div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+      <div class="col-4">Battery</div>
+      <div class="col-6">{{laptop.battery}} mAh</div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+      <div class="col-4">Weight</div>
+      <div class="col-6">{{laptop.weight}} kg.</div>
+  </div>
+  <hr class="container-separator">
+  <div class="row">
+
+      <!-- <ng-template #t let-fill="fill">
+        <span class="star" [class.full]="fill === 100">
+          <span class="half" [style.width.%]="fill">
+            &#9733;
+      </span>
+      &#9733;
+        </span>
+      </ng-template>
+
+      <ngb-rating [(rate)]="laptop.valoration" [starTemplate]="t" [readonly]="false" [max]="5"></ngb-rating> -->
+  </div>
+
+</div>
+

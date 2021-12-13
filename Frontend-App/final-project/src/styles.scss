@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+$cWhite: #FFFFFF;
+$cBlackTheme: #161616;
+$cTitleBlack: #3B3E43;
+$cBlackButton: #5E5E5E;
+
+.fondo {
+    height: 100% !important;
+}
+.slider .bar {
+    z-index: 0 !important;
+    div.filler {
+        border: 0 !important;
+    }
+}
+.slider .bar > span {
+    &.left-handle, &.right-handle {
+        background: #393939 !important;
+        border: 0px !important;
+    }
+}
+.slider .bar div.filler > span {
+  background: linear-gradient(249.78deg, #373a39 -0.64%, #3b7065 59.08%, #0cbd9d 98.17%) !important;
+}
+.slider .bar > span {
+    &.left-handle .handle-tooltip,  &.right-handle .handle-tooltip {
+        left: -6px !important;
+    }
+    &.left-handle .handle-tooltip, &.right-handle .handle-tooltip {
+        border: 1px solid #6C50E7 !important;
+        background: #E3C1F0 !important;
+        color: #363636 !important;
+    }
+    &.left-handle .handle-tooltip:before, &.right-handle .handle-tooltip:before {
+        border-top-color: #6C50E7 !important;
+    }
+
+    &.left-handle .handle-tooltip:after, &.right-handle .handle-tooltip:after {
+        border-top-color: #6C50E7 !important;
+    }
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

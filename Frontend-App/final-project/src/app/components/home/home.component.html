@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="box-search">
+    <div class="title-search">
+        <h1>Compare laptops</h1>
+    </div>
+    <span id="description-search">We compare laptops specifications</span>
+    <div class="input-search">
+        <input #name type="text" placeholder="Search laptops by brand or model" (keydown.enter)="search(name.value)"/>
+        <button type="button" class="btn btn-search" (click)="search(name.value)">Search laptops</button>
+    </div>
+  </div>
+</div>
+<div class="container valorations">
+    <div id="title-valoracionesHome">
+        <h1>Some laptops</h1>
+    </div>
+    <div class="row">
+        <div *ngFor="let laptop of randomLaptops" class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="{{laptop.image}}" class="card-img-top" alt="Imagen laptop">
+                <div class="card-body">
+                  <h5 class="card-title">{{laptop.brand}} {{laptop.model}}</h5>
+                  <!-- <ng-template #t let-fill="fill">
+                    <span class="star" [class.full]="fill === 100">
+                      <span class="half" [style.width.%]="fill">
+                        &#9733;
+                  </span>
+                  &#9733;
+                    </span>
+                  </ng-template>
+                  <ngb-rating [(rate)]="laptop.valoration" [starTemplate]="t" [readonly]="true" [max]="5"></ngb-rating> -->
+                  <br>
+                  <a (click)="detailLaptop(laptop.id)" class="btn btn-dark" >View specifications</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<div class="container-eleccion">
+    <div class="eleccion">
+        <span class="subhead-eleccion">Select your laptop</span>
+        <h1 class="title-eleccion">Do you want find the perfect laptop for you?</h1>
+        <p>Use the Laptcom comparator to find the laptop that best suits your needs</p>
+
+    </div>
+</div>
+

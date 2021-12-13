@@ -1,0 +1,81 @@
+@import '../../../styles';
+footer {
+    height: 240px;
+    background: $cBlackTheme;
+    padding: 70px 310px 30px 310px;
+    .logo-rrss {
+        height: 50px;
+        .logo-footer {
+            width: 200px;
+            float: left;
+            img {
+                width: 200px;
+            }
+        }
+        ul {
+            li {
+                list-style: none;
+                display: inline;
+            }
+        }
+        .nav-rrss {
+            width: auto;
+            float: right;
+            margin-top: 16px;
+            li {
+                margin-left: 20px;
+                a {
+                    color: $cWhite;
+                    transition: 0.1s all;
+
+                }
+                .facebook:hover {
+                    color: #4267B2;
+                }
+                .instagram:hover {
+                    color: #C13584;
+                }
+                .twitter:hover {
+                    color: #1DA1F2;
+                }
+            }
+        }
+    }
+    hr {
+        height: 1px;
+        color: $cWhite;
+        opacity: 0.35;
+        box-sizing: border-box;
+    }
+    .copyright-terms {
+        .copyright {
+            width: 150px;
+            float: left;
+            span {
+                font-size: 15px;
+                color: $cWhite;
+                opacity: 0.80;
+            }
+        }
+        .nav-terms {
+            width: auto;
+            float: right;
+            li {
+                list-style: none;
+                display: inline;
+                margin-left: 24px;
+                a {
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: $cWhite;
+                    opacity: 0.80;
+                    transition: 0.1s all;
+                    &:hover {
+                        color: #C13584;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<div class="d-flex my100">
+  <div class="d-flex flex-column p-3 text-white menu-bar">
+    <img src="../../../assets/icons/laptcom_icon.png" id="laptop" alt="User Icon" routerLink=""/>
+    <div class="dashboard-text"><h3><span>DASHBOARD</span></h3></div>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+              <a href="#" class="nav-link text-white my-2" [routerLink]="['control']" routerLinkActive="actived" [routerLinkActiveOptions]="{exact: false}"><img class="icon me-3" src="../../../assets/icons/control.svg">Control panel</a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-white my-2" [routerLink]="['edition']" routerLinkActive="actived" [routerLinkActiveOptions]="{exact: false}"><img class="icon me-3" src="../../../assets/icons/edition.svg">Edition panel</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white my-2" [routerLink]="['admin']" routerLinkActive="actived" [routerLinkActiveOptions]="{exact: true}"><img class="icon me-3" src="../../../assets/icons/admin.svg">Admin profile</a>
+        </li>
+      </ul>
+      <ul class="nav nav-pills flex-column mt-auto">
+        <li class="nav-item">
+            <a class="nav-link text-white" (click)="logout()"><img class="icon me-3" src="../../../assets/icons/logout.svg">Logout</a>
+        </li>
+      </ul>
+  </div>
+  <div class="p-2 w-100 bd-highlight overflow-auto">
+    <a class="admin-icon nav-link text-dark" routerLink="/dashboard/admin"><img class=" icon-a me-3" src="../../../assets/icons/admin.svg">{{currentAdmin.name}} {{currentAdmin.lastname}}</a>
+      <router-outlet></router-outlet>
+  </div>
+</div>
+

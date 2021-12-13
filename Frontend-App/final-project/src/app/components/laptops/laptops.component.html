@@ -1,0 +1,131 @@
+<div class="container-fluid"></div>
+<div class="container">
+  <div class="box-search d-flex justify-content-center mb-3">
+  <div class="input-search">
+    <input type="text" placeholder="Search laptops by brand or model" (input)="onSearchChange($event)" [value]="filter"/>
+  </div>
+</div>
+    <div class="colum-filter">
+        <aside class="filter-laptops">
+                <h6>{{filterLaptops.length}} results of {{allLaptops.length}}</h6>
+                <hr class="container-separator">
+                <p class="title-filter-first">Price</p>
+                <div class="form-check price">
+                    <npn-slider [min]="0" [max]="7000" (onChange)="onSliderChange($event)" [showStepIndicator]="true"></npn-slider>
+                </div>
+                <hr class="container-separator">
+                <p class="title-filter">Processor</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckA()"  id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    AMD
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckB()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Intel
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckC()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    M1
+                    </label>
+                </div>
+                <hr class="container-separator">
+                <p class="title-filter">Graphic card</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckD()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    AMD
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckE()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    NVIDIA
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckF()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Integrated graphics
+                    </label>
+                </div>
+                <hr class="container-separator">
+                <p class="title-filter">RAM Type</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckG()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    DDR3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckH()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    DDR4
+                    </label>
+                </div>
+                <hr class="container-separator">
+                <p class="title-filter">ROM Type</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckI()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    HDD
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" (click)="onCheckJ()" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    SSD
+                    </label>
+                </div>
+        </aside>
+    </div>
+    <div class="colum-laptops">
+        <div class="row">
+
+            <div *ngFor="let laptop of allLaptopsFilteredPag" class="col-sm-6 col-md-4 col-lg-3" (click)="detailLaptop(laptop.id)">
+
+                      <div class="card">
+                        <div class="card-img-top" [ngStyle]="{ 'background-image': 'url(' + laptop.image + ')' }"></div>
+                        <div class="card-body">
+                            <a class="link-laptop" (click)="detailLaptop(laptop.id)" routerLinkActive="router-link-active">
+                                <h5 class="card-title">{{laptop.brand}} {{laptop.model}}</h5>
+                            </a>
+                            <h6>{{laptop.price}} €</h6>
+
+                            <!-- <ng-template #t let-fill="fill">
+                              <span class="star" [class.full]="fill === 100">
+                                <span class="half" [style.width.%]="fill">
+                                  &#9733;
+                            </span>
+                            &#9733;
+                              </span>
+                            </ng-template>
+
+                            <ngb-rating [(rate)]="laptop.valoration" [starTemplate]="t" [readonly]="true" [max]="5"></ngb-rating> -->
+                            <!-- <a class="btn btn-primary" (click)="detailLaptop(laptop._id)">Ver características</a> -->
+                        </div>
+                      </div>
+
+            </div>
+            <nav *ngIf="filterLaptops.length != 0" aria-label="Page navigation example">
+              <ul class="pagination justify-content-center mt-5">
+                <li class="page-item">
+                  <a class="page-link" (click)="goPrevPage()" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li *ngFor="let item of pages; let p = index" class="page-item" [ngClass]="{'active': item == page}"><a class="page-link" (click)="goPage(item)">{{item}}</a></li>
+                <li class="page-item">
+                  <a class="page-link" (click)="goNextPage()" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+</div>

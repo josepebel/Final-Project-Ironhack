@@ -1,0 +1,76 @@
+.control-panel{
+  margin-right: 3rem;
+
+
+.text-data{
+ padding-top: 1.5rem;
+ p{
+   margin: 0;
+ }
+}
+
+  .image{
+    margin-top: 0.25rem;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 3rem;
+  }
+}
+
+.icon{
+  filter: invert(39%) sepia(16%) saturate(15%) hue-rotate(321deg) brightness(88%) contrast(83%);
+  width: 25px;
+  height: 25px;
+}
+
+.edit-icon:hover{
+  filter: invert(50%) sepia(76%) saturate(477%) hue-rotate(169deg) brightness(81%) contrast(81%);
+  cursor: pointer;
+
+}
+
+.delete-icon:hover{
+
+  filter: invert(12%) sepia(85%) saturate(5051%) hue-rotate(1deg) brightness(87%) contrast(118%);
+  cursor: pointer;
+}
+
+
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 1.75rem;
+  color: #d3d3d3;
+}
+.full {
+  color: rgb(255, 196, 0);
+}
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: rgb(255, 196, 0);
+}
+
+
+
+.active{
+  .page-link{
+  background: black;
+  color: white
+
+  }
+}
+.page-link{
+  color: black;
+  cursor: pointer;
+}
+
+.actions{
+
+  img{
+    margin-left: 1rem;
+  }
+}

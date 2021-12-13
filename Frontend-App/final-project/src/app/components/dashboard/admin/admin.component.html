@@ -1,0 +1,64 @@
+<div class="admin-panel mt-3 ms-5">
+  <div class="title d-flex mb-4">
+    <h2 class="me-auto">Administrator profile</h2>
+  </div>
+
+
+    <div class="row">
+      <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
+        <div class="column">
+        <div class="image rounded-circle me-3 mb-2"></div>
+        <a class="nav-link text-dark" routerLink="/dashboard/edition"
+      ><img class="icon me-3 " src="../../../assets/icons/camara.svg" />Update image</a
+    ></div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+        <div>
+          <div class="form-group">
+            <label for="IDadmin">Admin ID number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="IDadmin"
+              [(ngModel)]="currentAdmin.adminID"
+              disabled
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Firstname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              [(ngModel)]="currentAdmin.name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Lastname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              [(ngModel)]="currentAdmin.lastname"
+            />
+          </div>
+          <div class="form-group">
+            <label for="mail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="mail"
+              disabled
+              [(ngModel)]="currentAdmin.email"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="boton d-flex justify-content-center">
+    <button class="mt-3 btn btn-dark " (click)="updateAdmin()">Update profile</button>
+  </div>
+  </div>
+
+

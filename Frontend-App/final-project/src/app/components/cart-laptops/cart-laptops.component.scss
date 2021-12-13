@@ -1,0 +1,97 @@
+@import '../../../styles';
+.hidden { display: none; }
+.cart-laptops {
+    position: fixed;
+    height: 55px;
+    width: 240px;
+    left: 15px;
+    bottom: 15px;
+    z-index: 999;
+    .title-comparison {
+        text-transform: capitalize;
+        color: $cBlackTheme;
+        font-size: 15px;
+        .badge{
+          background-color: #212529;
+          font-size: 15px;
+        }
+    }
+    .btn.dropdown {
+        background: #d8d8d8;
+        border-top-left-radius: 25px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 25px !important;
+        border-bottom-left-radius: 25px !important;
+        box-shadow: 0px 0px 7px 2px rgb(191,191,191);
+        z-index: 999;
+        &:hover {
+            box-shadow: 0px 0px 7px 2px rgb(160,160,160);
+            -webkit-box-shadow: 0px 0px 7px 2px rgb(160,160,160);
+        }
+    }
+}
+.dropdown-menu.show {
+    width: 220px;
+    padding: 10% 0.5%;
+    background: #F7F7F7;
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    inset: auto auto -4% 8.5% !important;
+    .btn-compare {
+        background: #212529;
+        color: $cWhite;
+        font-size: 15px;
+        border-radius: 20px;
+        padding: 5.5px 20px;
+        position: relative;
+        left: 13%;
+        &:hover {
+            background: $cWhite;
+            color: #212529;
+            border-color: #212529;
+        }
+    }
+    .list-laptops {
+        width: 98%;
+        margin: auto;
+        margin-top: 20px  !important;
+        .listLaptopsEmpty  {
+            padding-top: 15px;
+            text-align: center;
+        }
+        .file-laptop-car {
+            padding-bottom: 40px;
+        }
+        .image-laptop-list-compare {
+            width: 20%;
+            background-image: url("https://thumb.pccomponentes.com/w-530-530/articles/35/351246/1703-msi-gf75-thin-10ue-017xes-intel-core-i7-10750h-16gb-512gb-ssd-rtx-3060-173.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .name-laptop-list-compare {
+            padding-left: 10px;
+        }
+        .del-laptop-list-compare {
+            position: relative;
+            top: -3px;
+            text-align: right;
+        }
+        .icon{
+            filter: invert(39%) sepia(16%) saturate(15%) hue-rotate(321deg) brightness(88%) contrast(83%);
+            width: 20px;
+            height: 20px;
+            margin-right: 5px !important;
+        }
+        .delete-icon:hover{
+            filter: invert(12%) sepia(85%) saturate(5051%) hue-rotate(1deg) brightness(87%) contrast(118%);
+            cursor: pointer;
+        }
+    }
+}
+.image-logo{
+  width: 80%;
+  height: auto;
+}

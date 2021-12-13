@@ -1,0 +1,85 @@
+@import '../../../styles';
+.transparent {
+  background: transparent;
+  a:hover {
+      color: $cBlackTheme !important;
+  }
+}
+.dark {
+  background: $cBlackTheme;
+  a:hover {
+      color: #35c190 !important;
+  }
+}
+.sticky {
+    background: $cBlackTheme;
+    z-index: 999;
+    a:hover {
+        color: #35c190 !important;
+    }
+}
+.navbar {
+    /*  */
+    position: fixed !important;
+    width: 100%;
+    z-index: 2;
+    /* */
+
+    img { width: 190px; }
+    .navbar-collapse {
+        .navbar-nav {
+            margin: auto;
+            margin-top: 0;
+            .nav-item {
+                .nav-link {
+                    color: $cWhite;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .btn-signup {
+            width: 190px;
+            button {
+                height: 61px;
+                width: 152px;
+                left: 1720px;
+                top: 14px;
+                float: right;
+
+                border-radius: 60px;
+                border: 0;
+                font-weight: 500;
+
+            }
+        }
+    }
+}
+.btn-sign-dark{
+  background: white;
+  color: black;
+
+
+  &:hover{
+    background: linear-gradient(249.78deg, #8a8a8a -0.64%, #57ae9c 59.08%, #0cbd9d 98.17%);
+    color: white;
+  }
+}
+
+.btn-sign-transparent{
+  background: white;
+  color: black;
+
+  &:hover{
+    background: black;
+    color: white;
+
+  }
+}
+
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}

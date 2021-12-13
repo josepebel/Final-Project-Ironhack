@@ -1,0 +1,54 @@
+
+<div class="fondo">
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+
+
+      <!-- Icon -->
+      <div class="fadeIn first py-3 logo">
+        <img src="../../../assets/icons/laptcom_icon_black.png" id="laptop" alt="User Icon" routerLink="/"/>
+
+      </div>
+      <div class="dashboard-text"><h3><span>DASHBOARD</span></h3></div>
+
+      <!-- Login Form -->
+      <form
+        [formGroup]="mForm"
+        (ngSubmit)="sendData()"
+        class="needs-validation"
+        novalidate
+      >
+        <div>
+          <div class="label"><h6>Admin ID</h6></div>
+          <input
+            type="text"
+            class="fadeIn second form-control"
+            id="validationCustom01"
+            placeholder="Introduce tu identificador de administrador"
+            formControlName="adminID"
+            [ngClass]="{ 'is-invalid': isSend && f.adminID.errors }"
+
+          />
+          <div class="invalid-feedback ">Introduce your admin ID</div>
+        </div>
+        <div>
+          <div class="label mt-2"><h6>Password</h6></div>
+          <input
+            type="password"
+            class="fadeIn third form-control"
+            id="validationCustom02"
+            placeholder="Introduce tu contraseña"
+            formControlName="password"
+            [ngClass]="{ 'is-invalid': isSend && f.password.errors }"
+
+          />
+          <div class="invalid-feedback ">Introduce your password</div>
+        </div>
+        <button class="fadeIn fourth my-4">Log in</button>
+        <br/>
+
+      </form>
+    </div>
+  </div>
+  </div>
+

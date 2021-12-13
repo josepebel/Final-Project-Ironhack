@@ -1,0 +1,38 @@
+
+.edition-panel{
+  margin-right: 3rem;
+
+  label{
+    font-weight: 500;
+  }
+  input{
+    background: #EAEAEA;
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .image{
+    //background: url("../../../../assets/images/laptop1.jpg");
+    margin-top: 0.25rem;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 8rem;
+  }
+}
+
+.icon{
+  filter: invert(39%) sepia(16%) saturate(15%) hue-rotate(321deg) brightness(88%) contrast(83%);
+  width: 25px;
+  height: 25px;
+}
+
+.etiqueta-p{
+  margin-top: 1.75rem;
+}
+
+.etiqueta{
+  margin-top: -0.5rem;
+  margin-bottom: 0;
+}

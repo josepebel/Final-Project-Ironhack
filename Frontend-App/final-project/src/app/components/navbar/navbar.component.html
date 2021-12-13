@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg" [ngClass]="{ 'transparent': transparent, 'sticky': sticky, 'dark': dark }">
+  <div class="container-fluid">
+      <a routerLink="/">
+        <img src="../../../assets/icons/laptcom_icon.png" alt="Logo compare">
+      </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+          </li>
+          <li class="nav-item">
+              <a (click)="clearLaptops()" class="nav-link">Laptops</a>
+          </li>
+      </ul>
+      <!-- <div class="btn-signup">
+          <button (click)="toLogin()" class="btn " type="submit" [ngClass]="{ 'btn-sign-transparent': transparent, 'btn-sign-dark': sticky || dark }">Sign Up</button>
+      </div> -->
+      </div>
+  </div>
+</nav>

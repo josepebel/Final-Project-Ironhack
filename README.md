@@ -20,13 +20,61 @@ Laptcom is a fullstack app made with SpringBoot & MongoDB for backend app and An
 
 ## Use Case and Microservices Diagram
 
+IMAGEN
+
+IMAGEN
+
 ## Database
+
+For this app, the database use is MongoDB a NoSQL database thinking in this database type allows higher scalability for the project in the future. 
+In Mongo Atlas has been created a cluster in order to storage the information in a cloud platform, not only in our local. We have use a total number of 5 collections for this project, these collections are:
+ - Graphics collection
+ - CPU collection
+ - ROM collection
+ - RAM collection
+ - Laptop collection
+
+These division has been made on this way due to a future performance of this project and compare all type of laptop's components, not only the laptops.
 
 ## Backend
 
 ### Installation
 
+In order to run the backend project in your local you have follow the next steps:
+
+1. Clone this repository in your local ``` git clone https://github.com/josepebel/Final-Project-Ironhack.git ```
+2. Use ``` mvn spring-boot:run ``` in each folder of backend-app in this order
+    1. Eureka-Service at port 8761
+  2. Cpu-Service at port 8081
+  3. Rom-Service at port 8082
+  4. Ram-Service at port 8083
+  5. Graphics-Service at port 8084
+  6. Laptops-Service at port 8085
+  7. Edge-Service at port 8080
+
 ### API Endpoints
+
+You can check the correct operation of the service using Postman. In the folder resouces you can find the endpoint-collection to check all endpoints for edge-service and proxy-services.
+
+|     Method        |             Endpoint               |                          Return                        |
+|-------------------|------------------------------------|--------------------------------------------------------|
+|        POST         |             /cpu                 |      Created a cpu         |
+|        GET         |            /cpu/{id}         |      A cpu information                              |
+|         PUT         |       /cpu/{id}       |      Update a cpu information                    |
+|        POST         |             /rom                 |      Created a rom         |
+|        GET         |            /rom/{id}          |      A rom information                              |
+|         PUT         |       /rom/{id}       |      Update a rom information                    |
+|        POST         |             /ram                 |      Created a ram         |
+|        GET         |            /ram/{id}         |      A ram information                              |
+|         PUT         |       /ram/{id}       |      Update a ram information                    |
+|        POST         |             /graphics                 |      Created a graphic card         |
+|        GET         |            /graphics/{id}          |      A graphic card information                              |
+|         PUT         |       /graphics/{id}       |      Update a garphic card information                    |
+|        POST         |             /laptop                 |      Created a laptop         |
+|        GET         |            /laptop/{id}          |      A laptop information                              |
+|        GET         |            /laptops          |      All laptops information                            |
+|         PUT         |       /laptop/{id}       |      Update a laptop information                    |
+|         DELETE         |       /laptop/{id}       |     Delete a laptop                  |
 
 ## Frontend
 

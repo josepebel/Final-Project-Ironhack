@@ -20,9 +20,9 @@ Laptcom is a fullstack app made with SpringBoot & MongoDB for backend app and An
 
 ## Use Case and Microservices Diagram
 
-IMAGEN
+![usecase](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/UseCaseDiagram.drawio.png?raw=true)
 
-IMAGEN
+![microservice](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/MicroservicesDiagram.drawio.png?raw=true)
 
 ## Database
 
@@ -54,7 +54,7 @@ In order to run the backend project in your local you have follow the next steps
 
 ### API Endpoints
 
-You can check the correct operation of the service using Postman. In the folder resouces you can find the endpoint-collection to check all endpoints for edge-service and proxy-services.
+You can check the correct operation of the service using Postman. In the folder resouces you can find the [endptoin-collection](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/Laptop-Collection.postman_collection.json) to check all endpoints for edge-service and proxy-services.
 
 |     Method        |             Endpoint               |                          Return                        |
 |-------------------|------------------------------------|--------------------------------------------------------|
@@ -85,6 +85,29 @@ In order to run the backend project in your local you have follow the next steps
 3. Run angular server using ``` ng serve```
 
 ### Main features
+### Home
+![home](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/Home.png?raw=true)
+
+### Laptop Filters
+![laptops](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/laptops.png?raw=true)
+
+### Detail Laptops
+![detail](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/laptop-detail.png?raw=true)
+
+### Comparison
+![comparison](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/comparison.png?raw=true)
+
+### Dashboard Login
+![login](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/login.png?raw=true)
+
+### Control panel
+![control](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/control-panel.png?raw=true)
+
+### Edition panel
+![edition](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/edition-panel.png?raw=true)
+
+### Admin profile
+![admin](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/admin-profile.png?raw=true)
 
 ## Improves
 

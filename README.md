@@ -45,12 +45,12 @@ In order to run the backend project in your local you have follow the next steps
 1. Clone this repository in your local ``` git clone https://github.com/josepebel/Final-Project-Ironhack.git ```
 2. Use ``` mvn spring-boot:run ``` in each folder of backend-app in this order
     1. Eureka-Service at port 8761
-  2. Cpu-Service at port 8081
-  3. Rom-Service at port 8082
-  4. Ram-Service at port 8083
-  5. Graphics-Service at port 8084
-  6. Laptops-Service at port 8085
-  7. Edge-Service at port 8080
+    2. Cpu-Service at port 8081
+    3. Rom-Service at port 8082
+    4. Ram-Service at port 8083
+    5. Graphics-Service at port 8084
+    6. Laptops-Service at port 8085
+    7. Edge-Service at port 8080
 
 ### API Endpoints
 
@@ -79,7 +79,15 @@ You can check the correct operation of the service using Postman. In the folder 
 ## Frontend
 
 ### Installation
+In order to run the backend project in your local you have follow the next steps:
+1. Clone this repository in your local ``` git clone https://github.com/josepebel/Final-Project-Ironhack.git ```
+2. Open frontend-app folder and use ``` npm install``` to install all dependences in node-modules
+3. Run angular server using ``` ng serve```
 
 ### Main features
 
 ## Improves
+
+During the academic project and due to limited time to make it have surged some ideas or improves to apply on it. Some of these ideas are:
+- Allow to users to rating and comments their valorations about laptops.
+- Allow to users to compare the components of a laptops such as rom, ram, cpu, graphics

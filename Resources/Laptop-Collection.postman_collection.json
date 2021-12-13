@@ -1,0 +1,968 @@
+{
+	"info": {
+		"_postman_id": "1b7ca32d-cd6b-4c4c-a3b1-af2e8af4427b",
+		"name": "Laptop-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Edge-Service",
+			"item": [
+				{
+					"name": "Laptops",
+					"item": [
+						{
+							"name": "Create Laptop",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"image\": \"https://thumb.pccomponentes.com/w-530-530/articles/39/395435/1442-asus-rog-g513qm-hf026-amd-ryzen-7-5800h-16gb-1tb-ssd-rtx3060-156.jpg\",\r\n    \"brand\": \"Asus\",\r\n    \"model\": \"ROG G513QM-HF026\",\r\n    \"price\": 1429.99,\r\n    \"url\": \"https://www.pccomponentes.com/asus-rog-g513qm-hf026-amd-ryzen-7-5800h-16gb-1tb-ssd-rtx3060-156\",\r\n    \"fabricDate\": \"2020-09-23\",\r\n    \"cpu\": \"61a22230efa714016e5f413f\",\r\n    \"ram\": \"61a221fdb32fd5304478559c\",\r\n    \"rom\": \"61a221cdda95c326f5970315\",\r\n    \"graphics\": \"61a221a0cc0cc46104eab37b\",\r\n    \"resolution\": \"15.6'' (1920x1080)\",\r\n    \"os\": \"Sin Sistema Operativo\",\r\n    \"battery\": 18000,\r\n    \"weight\": 2.3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/laptop",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"laptop"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Laptop",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/laptop/61abcd92efcc6fae658074e5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"laptop",
+										"61abcd92efcc6fae658074e5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Laptops",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/laptops",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"laptops"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Laptop",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"image\": \"NVIDIA\",\r\n    \"brand\": \"ddd\",\r\n    \"model\": \"d\",\r\n    \"price\": 2.32,\r\n    \"url\": \"NVIDIA\",\r\n    \"fabricDate\": \"1975-07-14\",\r\n    \"cpu\": \"NVIDIA\",\r\n    \"ram\": \"x\",\r\n    \"rom\": \"NVIDIA\",\r\n    \"graphics\": \"x\",\r\n    \"resolution\": \"NVIDIA\",\r\n    \"os\": \"x\",\r\n    \"battery\": 6,\r\n    \"weight\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/laptop/619e96cfaaad5567a311acd1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"laptop",
+										"619e96cfaaad5567a311acd1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Laptop",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"image\": \"NVIDIA\",\r\n    \"brand\": \"ddd\",\r\n    \"model\": \"d\",\r\n    \"price\": 2.32,\r\n    \"url\": \"NVIDIA\",\r\n    \"fabricDate\": \"1975-07-14\",\r\n    \"cpu\": \"NVIDIA\",\r\n    \"ram\": \"x\",\r\n    \"rom\": \"NVIDIA\",\r\n    \"graphics\": \"x\",\r\n    \"resolution\": \"NVIDIA\",\r\n    \"os\": \"x\",\r\n    \"battery\": 6,\r\n    \"weight\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/laptop/619e96cfaaad5567a311acd1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"laptop",
+										"619e96cfaaad5567a311acd1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Graphics",
+					"item": [
+						{
+							"name": "Create Graphics",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"brand\": \"NVIDIA\",\r\n    \"model\": \"GeForce RTX 3060\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/graphics",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphics"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Graphics",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/graphics/619e843aca9cb90f279f3ae2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphics",
+										"619e843aca9cb90f279f3ae2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Graphics",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"brand\": \"NVIDIA\",\r\n    \"model\": \"GTX\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/graphics/619e8453ca9cb90f279f3ae3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphics",
+										"619e8453ca9cb90f279f3ae3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RAM",
+					"item": [
+						{
+							"name": "Create RAM",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"DDR4\",\r\n    \"size\": 16,\r\n    \"expandSize\": 2,\r\n    \"speed\": 4000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/ram",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ram"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get RAM",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/ram/619d3ebad135301c005df06d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ram",
+										"619d3ebad135301c005df06d"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all RAM",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/rams",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"rams"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update RAM",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"DDR4\",\r\n    \"size\": 64,\r\n    \"expandSize\": \"\",\r\n    \"speed\": 4600\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/ram/61abc390efcc6fae6571efd4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ram",
+										"61abc390efcc6fae6571efd4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CPU",
+					"item": [
+						{
+							"name": "Create CPU",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cpuName\": \"AMD Ryzen 7 5800H\",\r\n    \"cores\": 8,\r\n    \"speed\": 4.4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cpu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cpu"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get CPU",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cpu/619d2eb274878d4e548e99db",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cpu",
+										"619d2eb274878d4e548e99db"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update CPU",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cpuName\": \"Intel Core i7\",\r\n    \"cores\": 6,\r\n    \"speed\": 6.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cpu/619d2eb274878d4e548e99db",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cpu",
+										"619d2eb274878d4e548e99db"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ROM",
+					"item": [
+						{
+							"name": "Create Rom",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"romType\": \"SSD\",\r\n    \"capacity\": 1024\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/rom",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"rom"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Rom",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/rom/619bea8265be312ebc59dc7c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"rom",
+										"619bea8265be312ebc59dc7c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Rom",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"romType\": \"SSD\",\r\n    \"capacity\": 256\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/rom/619bf770dc2ed24e62d38147",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"rom",
+										"619bf770dc2ed24e62d38147"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Microservices",
+			"item": [
+				{
+					"name": "Laptops MS",
+					"item": [
+						{
+							"name": "Create Laptop",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"image\": \"https://thumb.pccomponentes.com/w-530-530/articles/39/395435/1442-asus-rog-g513qm-hf026-amd-ryzen-7-5800h-16gb-1tb-ssd-rtx3060-156.jpg\",\r\n    \"brand\": \"Asus\",\r\n    \"model\": \"ROG G513QM-HF026\",\r\n    \"price\": 1429.99,\r\n    \"url\": \"https://www.pccomponentes.com/asus-rog-g513qm-hf026-amd-ryzen-7-5800h-16gb-1tb-ssd-rtx3060-156\",\r\n    \"fabricDate\": \"2020-09-23\",\r\n    \"cpu\": \"61a22230efa714016e5f413f\",\r\n    \"ram\": \"61a221fdb32fd5304478559c\",\r\n    \"rom\": \"61a221cdda95c326f5970315\",\r\n    \"graphics\": \"61a221a0cc0cc46104eab37b\",\r\n    \"resolution\": \"15.6'' (1920x1080)\",\r\n    \"os\": \"Sin Sistema Operativo\",\r\n    \"battery\": 18000,\r\n    \"weight\": 2.3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/laptop",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"laptop"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Laptop",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/laptop/619e96cfaaad5567a311acd1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"laptop",
+										"619e96cfaaad5567a311acd1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Laptops",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/laptops",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"laptops"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Laptop",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"image\": \"https://thumb.pccomponentes.com/w-530-530/articles/39/395435/1442-asus-rog-g513qm-hf026-amd-ryzen-7-5800h-16gb-1tb-ssd-rtx3060-156.jpg\",\r\n    \"brand\": \"Asus\",\r\n    \"model\": \"ROG G513QM-HF026\",\r\n    \"price\": 1429.99,\r\n    \"url\": \"https://www.pccomponentes.com/asus-rog-g513qm-hf026-amd-ryzen-7-5800h-16gb-1tb-ssd-rtx3060-156\",\r\n    \"fabricDate\": \"2020-09-23\",\r\n    \"cpu\": \"61a22230efa714016e5f413f\",\r\n    \"ram\": \"61a221fdb32fd5304478559c\",\r\n    \"rom\": \"61a221cdda95c326f5970315\",\r\n    \"graphics\": \"61a221a0cc0cc46104eab37b\",\r\n    \"resolution\": \"15.6'' (1920x1080)\",\r\n    \"os\": \"Sin Sistema Operativo\",\r\n    \"battery\": 18000,\r\n    \"weight\": 2.3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/laptop/619e96cfaaad5567a311acd1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"laptop",
+										"619e96cfaaad5567a311acd1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Laptop",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"image\": \"NVIDIA\",\r\n    \"brand\": \"ddd\",\r\n    \"model\": \"d\",\r\n    \"price\": 2.32,\r\n    \"url\": \"NVIDIA\",\r\n    \"fabricDate\": \"1975-07-14\",\r\n    \"cpu\": \"NVIDIA\",\r\n    \"ram\": \"x\",\r\n    \"rom\": \"NVIDIA\",\r\n    \"graphics\": \"x\",\r\n    \"resolution\": \"NVIDIA\",\r\n    \"os\": \"x\",\r\n    \"battery\": 6,\r\n    \"weight\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/laptop/619e96cfaaad5567a311acd1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"laptop",
+										"619e96cfaaad5567a311acd1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Graphics MS",
+					"item": [
+						{
+							"name": "Create Graphics",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"brand\": \"NVIDIA\",\r\n    \"model\": \"x\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/graphics",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"graphics"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Graphics",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/graphics/619e843aca9cb90f279f3ae2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"graphics",
+										"619e843aca9cb90f279f3ae2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Graphics",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"brand\": \"NVIDIA\",\r\n    \"model\": \"GTxu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/graphics/619e8453ca9cb90f279f3ae3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"graphics",
+										"619e8453ca9cb90f279f3ae3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RAM MS",
+					"item": [
+						{
+							"name": "Create RAM",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"DDR4\",\r\n    \"size\": 64,\r\n    \"expandSize\": 64,\r\n    \"speed\": 460\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/ram",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"ram"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get RAM",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/ram/619d3ebad135301c005df06d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"ram",
+										"619d3ebad135301c005df06d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update RAM",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"DDR4\",\r\n    \"size\": 64,\r\n    \"expandSize\": \"\",\r\n    \"speed\": 4600\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/ram/619d3ebad135301c005df06d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"ram",
+										"619d3ebad135301c005df06d"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CPU MS",
+					"item": [
+						{
+							"name": "Create CPU",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cpuName\": \"Intel Core i7\",\r\n    \"cores\": 6,\r\n    \"speed\": 6.5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/cpu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cpu"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get CPU",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/cpu/619d2eb274878d4e548e99db",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cpu",
+										"619d2eb274878d4e548e99db"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update CPU",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cpuName\": \"Intel Core i7\",\r\n    \"cores\": 6,\r\n    \"speed\": 6.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/cpu/619d2eb274878d4e548e99db",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cpu",
+										"619d2eb274878d4e548e99db"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ROM MS",
+					"item": [
+						{
+							"name": "Create Rom",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"romType\": \"SSD\",\r\n    \"capacity\": 257\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/rom",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"rom"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Rom",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/rom/619bea8265be312ebc59dc7c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"rom",
+										"619bea8265be312ebc59dc7c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Rom",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"romType\": \"SSD\",\r\n    \"capacity\": 128\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/rom/619bf770dc2ed24e62d38147",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"rom",
+										"619bf770dc2ed24e62d38147"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

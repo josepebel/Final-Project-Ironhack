@@ -54,7 +54,7 @@ In order to run the backend project in your local you have follow the next steps
 
 ### API Endpoints
 
-You can check the correct operation of the service using Postman. In the folder resouces you can find the [endptoin-collection](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/Laptop-Collection.postman_collection.json) to check all endpoints for edge-service and proxy-services.
+You can check the correct operation of the service using Postman. In the folder resouces you can find the [endpoint-collection](https://github.com/josepebel/Final-Project-Ironhack/blob/master/Resources/Laptop-Collection.postman_collection.json) to check all endpoints for edge-service and proxy-services.
 
 |     Method        |             Endpoint               |                          Return                        |
 |-------------------|------------------------------------|--------------------------------------------------------|
